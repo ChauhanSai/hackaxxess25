@@ -25,7 +25,7 @@
 
 /* Navbar */
 .navbar {
-  position: fixed; /* Ensures it stays at the top */
+  position: absolute; /* Ensures it stays at the top */
   top: 0;
   left: 0;
   width: 100vw; /* Spans full width */
@@ -74,7 +74,7 @@
 }
 
 .nav-item:hover{
-  color:#d1f191;
+  color:#035c2f;
   text-decoration: underline;
 }
 
