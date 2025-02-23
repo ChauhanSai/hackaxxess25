@@ -18,9 +18,8 @@ const App = () => {
             <img src={logo} alt="Forkast Logo" className="logo" />
           </Link>
           <div className = "routes">
-          <Link to="/chat-bot" className="nav-item">Chatbot</Link>
-            <Link to="/activities" className="nav-item">temp</Link>
-            <Link to="/forkast" className="nav-item">Forkast</Link>
+          <Link to="/chat-bot" className="nav-item">NomBot</Link>
+            <Link to="/forkast" className="nav-item">Dashboard</Link>
             <Link to="/register" className="login-button">Register</Link>  {/* Link to Register Page */}
           </div>
         </div>
