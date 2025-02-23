@@ -14,7 +14,11 @@
 backend/image/*
 backend/data/*
 backend/*.pt
+backend/node_modules/*
+backend/package.json
+backend/package-lock.json
 
 # Frontend
+frontend/node_modules/*
 frontend/package.json
 frontend/package-lock.json
