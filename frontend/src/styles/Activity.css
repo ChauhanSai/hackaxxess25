@@ -1,0 +1,69 @@
+/* Activity.css */
+.activity-container {
+    background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  color:#023020;
+}
+
+.activity-title {
+  text-align: left;
+  color: #023020;
+  font-size: 64px;
+  font-family: 'Hermeneus One', sans-serif;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+.activity-box {
+  background: rgba(143, 185, 96, 0.25);
+  border-radius: 30px;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-row {
+  flex: 1;
+  padding: 6px, 8px;
+  margin-bottom: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.activity-image {
+  flex: 1;
+  width: 100px;
+  height: 100px;
+  background: #D9D9D9;
+}
+
+.activity-text {
+  flex: 1;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-family: 'Hermeneus One', sans-serif;
+  font-weight: 400;
+}
+
+.activity-link {
+  flex: 1;
+  text-align: center;
+  color: #0000EE;
+  font-size: 18px;
+  white-space: nowrap;
+  font-family: 'Hermeneus One', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+  cursor: pointer;
+}

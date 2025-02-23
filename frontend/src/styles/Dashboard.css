@@ -1,0 +1,64 @@
+.dash-container{
+  background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  color:#023020;
+}
+
+.page-title{
+    position: fixed;
+    top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items:start;
+  color:#023020;
+  font-size: 45px;
+}
+
+.nutrition-title{
+    display: flex;
+    justify-content: start;
+    color:#023020;
+    font-size: 25px;
+}
+
+.background-row {
+  background-color: rbga(144, 186, 97, 0.4);
+  left: 0;
+  right: 0;
+  padding: 0 10px;
+}
+
+.recent-activities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Placeholder entity for the meal image uploaded by the user */
+.image-uploaded {
+  height: 100px;
+  width: 100px;
+  background-color: gray;
+}
+
+.show-all-button {
+  background-color: rgb(2, 48, 32);
+  color: #FFFFF0;
+  padding: 4px 2px;
+}
+
+.chart-container {
+    width: 90vw; /* Makes the chart take up most of the viewport width */
+    max-width: 1200px; /* Prevents it from getting too large on big screens */
+    margin: 20px auto; /* Centers it horizontally */
+    padding: 20px;
+    background: #f8f9fa; /* Optional: light background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  

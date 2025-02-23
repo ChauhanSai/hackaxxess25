@@ -1,0 +1,110 @@
+.login-container {
+  width: 1512px;
+  height: 910px;
+  padding: 53px 433px 82px;
+  background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 46px;
+}
+
+.welcome-text {
+  width: 641px;
+  height: 129px;
+  color: #023020;
+  font-size: 96px;
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+}
+
+.login-box {
+  width: 645px;
+  height: 600px;
+  position: relative;
+}
+
+.login-background {
+  width: 645px;
+  height: 600px;
+  position: absolute;
+  background: rgba(143.98, 185.93, 96.79, 0.25);
+  border-radius: 20px;
+}
+
+.login-button {
+  width: 470px;
+  height: 79px;
+  position: absolute;
+  left: 84px;
+  top: 435px;
+  background: #023020;
+  border-radius: 25px;
+}
+
+.login-text {
+  width: 181px;
+  height: 37px;
+  position: absolute;
+  left: 228px;
+  top: 456px;
+  text-align: center;
+  color: #FFFFF0;
+  font-size: 40px;
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+}
+
+.signup-text {
+  width: 342px;
+  height: 27px;
+  position: absolute;
+  left: 148px;
+  top: 550px;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+}
+
+.input-box {
+  position: absolute;
+  left: 66px;
+  top: 313px;
+}
+
+.input-label {
+  width: 200px;
+  height: 48px;
+  position: absolute;
+  color: black;
+  font-size: 40px;
+  font-family: "Hind", sans-serif;
+  font-weight: 400;
+}
+
+.password {
+  top: 265px;
+  left: 66px;
+}
+
+.email {
+  top: 117px;
+  left: 66px;
+}
+
+.login-title {
+  width: 411px;
+  height: 60.8px;
+  position: absolute;
+  left: 51px;
+  top: 31px;
+  color: black;
+  font-size: 64px;
+  font-family: "Hermeneus One", sans-serif;
+  font-weight: 400;
+}

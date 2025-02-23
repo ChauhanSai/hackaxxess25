@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Register Page Container */
+.register-container {
+    background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  color:#023020;
+}
+
+
+/* Welcome Title */
+.welcome-title {
+    font-size: 2.5rem;
+    font-family: 'Hermeneus One', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+    background: rgba(143, 185, 96, 0.25);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Form Title */
+.form-title {
+    font-size: 2rem;
+    font-family: 'Hermeneus One', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input-row {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 4rem 1fr;
+}
+
+/* Input Fields Wrapper */
+.input-fields {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    color:#023020;
+}
+
+/* Grouped Input Fields */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    color:#023020;
+}
+
+/* Individual Input Wrapper */
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Input Label */
+.input-label {
+    font-size: 1rem;
+    font-family: 'Hermeneus One', sans-serif;
+    color: rgb(2, 48, 32);
+    margin-bottom: 0.4rem;
+}
+
+/* Input Field */
+.input-field {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #023020;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Hermeneus One', sans-serif;
+    outline: none;
+    background-color: white; /* Changed to white */
+    color:#023020;
+}
+
+/* Register Button */
+.register-button {
+    width: 80%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Hermeneus One', sans-serif;
+    background: #023020;
+    color: #FFFFF0;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.register-button:hover {
+    cursor: pointer;
+}
+
+.register-button:active {
+    background: #035e29;
+}
+
+/* Login Link */
+.login-link {
+    font-size: 0.9rem;
+    font-family: 'Hermeneus One', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.login-link span {
+    color: blue ;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login-link span:hover {
+    cursor: pointer;
+}
