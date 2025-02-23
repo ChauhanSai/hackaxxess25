@@ -12,6 +12,7 @@
 
 # Backend
 backend/image/*
+backend/data/*
 backend/*.pt
 
 # Frontend
