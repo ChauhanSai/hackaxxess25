@@ -137,8 +137,7 @@ cv2.destroyAllWindows()
 #     print(blob)
 #
 #     # Run processing
-#     run_prolog_script()
-#     data = process_bindings()
+#     data = process_image()
 #     return jsonify(data)
 #
 # if __name__ == '__main__':
