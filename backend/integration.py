@@ -29,6 +29,23 @@ def processImage():
     print("Flask API is returning", data)
     return jsonify(data)
 
+@app.route('/api/register-user', methods=['GET'])
+def registerUser():
+    try:
+        user = request.args.get('user') # Get the argument from the URL query string
+    except:
+        user = "" # hard-coded failsafe for debug
+    if user is None:
+        user = "" # hard-coded failsafe for debug
+    print(user)
+    print("User:", user)
+
+    # Run processing
+    data = awsStack.userData(user)
+
+    print("Flask API is returning", data)
+    return jsonify(data)
+
 if __name__ == '__main__':
-    processImage()
+    # processImage()
     app.run(debug=True)

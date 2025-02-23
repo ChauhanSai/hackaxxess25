@@ -16,18 +16,15 @@ const RegisterPage = () => {
   const handleRegisterClick = async () => {
     // Gather the input fields into variables
 
-    const userData = '{"username":"'+username+'","password":"'+password+'","email":"'+email+'","age":"'+age+'","sex":"'+sex+'","height":"'+height+'","weight":"'+weight+'"}';
-
+    let userData = '"username":"'+username+'","password":"'+password+'","email":"'+email+'","age":"'+age+'","sex":"'+sex+'","height":"'+height+'","weight":"'+weight+'"';
+    userData = userData.replace(/"/g, "%22");
+    
     console.log("Register button clicked");
     console.log("User Data:", userData);
 
     try {
-      const response = await fetch(VITE_AWS_INVOKE_URL + "/user", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: userData,
+      const response = await fetch("http://127.0.0.1:5000/api/register-user?user=" + userData, {
+        method: "GET"
       });
 
       if (response.ok) {
