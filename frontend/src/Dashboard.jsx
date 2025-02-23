@@ -260,7 +260,7 @@ const Dashboard = () => {
         <div className="chart-container">
           <h1>My Sodium (mg)</h1>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbs} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
+            <LineChart data={sodium} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
@@ -275,7 +275,7 @@ const Dashboard = () => {
         <div className="chart-container">
           <h1>My Sugar (g)</h1>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbs} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
+            <LineChart data={sugar} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
@@ -290,7 +290,7 @@ const Dashboard = () => {
         <div className="chart-container">
           <h1>My Cholesterol (mg)</h1>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbs} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
+            <LineChart data={cholesterol} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
@@ -305,7 +305,7 @@ const Dashboard = () => {
         <div className="chart-container">
           <h1>My Sat Fats (g)</h1>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbs} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
+            <LineChart data={satFat} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
@@ -320,7 +320,7 @@ const Dashboard = () => {
         <div className="chart-container">
           <h1>My Iron (mg)</h1>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbs} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
+            <LineChart data={iron} margin={{ top: 30, right: 30, left: 0, bottom: 10 }}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
