@@ -30,4 +30,5 @@ def processImage():
     return jsonify(data)
 
 if __name__ == '__main__':
+    processImage()
     app.run(debug=True)

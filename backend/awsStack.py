@@ -54,24 +54,26 @@ def encrypt(dictionary):
 
 
 def forkastData(username, image, data):
-    id = username + datetime.now().strftime("%Y%m%d-%H%M%S")
+    id = username + "-" +  datetime.now().strftime("%Y%m%d-%H%M%S")
+    print(id)
 
     data = encrypt(data)
 
     dump = {
         "id": id,
         "image": image,
-        "data": encrypt(data)
+        "data": data
     }
 
     response = requests.post(
         AWS_INVOKE_URL + "/nutrition",
         headers={"Content-Type": "application/json"},
-        data=json.dumps(dump)
+        data=json.dumps(dump),
     )
 
     print(response.text)
 
 if __name__ == '__main__':
     data = {'Iron, Fe MG': 3.34, 'Potassium, K MG': 2078, 'Sodium, Na MG': 110.2, 'Glucose G': 5.7700000000000005, 'Fiber, total dietary G': 10.78, 'Calcium, Ca MG': 110.56, 'Carbohydrate, by difference G': 47.449999999999996, 'Sugars, Total G': 11.68, 'Vitamin C, total ascorbic acid MG': 14.8, 'Vitamin B-6 MG': 0.43, 'Biotin UG': 2.51, 'Vitamin D (D2 + D3), International Units IU': 0.0, 'Fatty acids, total monounsaturated G': 0.02, 'Fatty acids, total polyunsaturated G': 0.05, 'Energy KCAL': 16.0, 'Fatty acids, total saturated G': 0.03, 'Total Sugars G': 1.86, 'Vitamin A, IU IU': 7.0, 'Fatty acids, total trans G': 0.0, 'Cholesterol MG': 0.0}
-    encrypt(data)
+    print(data)
+    forkastData("admin", "anna-pelzer-IGfIGP5ONV0-unsplash.jpg", data)
