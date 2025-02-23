@@ -12,10 +12,10 @@
 
 /* Main Chatbot Container */
 .chatbot-container {
+    padding-top: 100px;
     width: 1200px;
-    height: 650px;
+    height: 800px;
     background: rgba(143, 185, 96, 0.25);
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,17 +31,54 @@
     font-size: 64px;
     font-family: 'Hermeneus One', sans-serif;
     font-weight: 400;
-    margin-top: 38px;
+    margin-top: 28px;
 }
 
 /* Chatbot Box */
 .chatbot-box {
+    flex: 1;
     width: 1000px;
-    height: 520px;
+    height: 480px;
     background: #FFFFF0;
     position: absolute;
-    top: 250px;
+    top: 260px;
+    padding: 18px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
+
+.chat-history {
+    text-align: left;
+    flex: 1;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.chat-input {
+    height: 100px;
+    margin-left: 30px;
+}
+
+.chat-input-bar {
+    width: 800px;
+    height: 60px;
+    border-radius: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+}
+
+.chat-input-button {
+    padding: 14px 20px;
+    font-size: 24px;
+    background-color: rgb(2, 48, 32);
+    color: #FFFFF0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
 
 /* Chatbot Decoration (Placeholder for Graphics) */
 .chatbot-decoration {

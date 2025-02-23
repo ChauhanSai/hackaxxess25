@@ -54,8 +54,10 @@ const ChatBot = () => {
   return (
     <div className="chatbot-wrapper">
       <div className="chatbot-container">
-        <h1 className="chatbot-title">Meet NomBot</h1>
+
+        <div className="chatbot-title">Meet NomBot</div>
         <div className="chatbot-box">
+
           <div className="chat-history">
             {messages.map((message, index) => (
               <div
@@ -66,17 +68,20 @@ const ChatBot = () => {
               </div>
             ))}
           </div>
+
           <div className="chat-input">
             <input
+              className="chat-input-bar"
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."
             />
-            <button onClick={handleSendMessage}>Send</button>
+            <button className="chat-input-button" onClick={handleSendMessage}>Send</button>
           </div>
+
         </div>
-        <div className="chatbot-decoration"></div>
+
       </div>
     </div>
   );
