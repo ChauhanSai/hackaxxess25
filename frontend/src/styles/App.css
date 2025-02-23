@@ -28,7 +28,7 @@
   position: absolute; /* Ensures it stays at the top */
   top: 0;
   left: 0;
-  width: 100vw; /* Spans full width */
+  width: 95vw; /* Spans full width */
   display: flex;
   justify-content: space-between; /* Pushes logo to the left and items to the right */
   align-items: center;
