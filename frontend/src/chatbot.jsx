@@ -23,11 +23,11 @@ const ChatBot = () => {
         const data = await response.json();
         console.log("Chat successful:", data);
         let message = data.substring(14, data.indexOf("'context'") - 2)
-        let context2 = data.substring(data.indexOf("'context'") + 11, data.length - 1)
-        context2 = context2.replace(/', '/g, '", "').replace(/\['/g, '\["').replace(/'\]/g, '"\]')
-        console.log("context2:", context2)
-        context = JSON.parse(context2)
-        console.log("message:", context)
+        // let context2 = data.substring(data.indexOf("'context'") + 11, data.length - 1)
+        // context2 = context2.replace(/', '/g, '", "').replace(/\['/g, '\["').replace(/'\]/g, '"\]')
+        // console.log("context2:", context2)
+        // context = JSON.parse(context2)
+        // console.log("message:", context)
         setTimeout(() => {
         setMessages((prevMessages) => [
           ...prevMessages,
