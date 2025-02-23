@@ -1,21 +1,9 @@
-/* Full Page Background */
-.chatbot-wrapper {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
-}
-
 /* Main Chatbot Container */
 .chatbot-container {
     padding-top: 100px;
-    width: 1200px;
-    height: 800px;
-    background: rgba(143, 185, 96, 0.25);
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #EFFFBB 60%, #CFFFCA 91%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +39,7 @@
 }
 
 .chat-history {
+    color: #023020;
     text-align: left;
     flex: 1;
     margin-bottom: 20px;

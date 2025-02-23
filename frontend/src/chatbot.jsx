@@ -52,7 +52,7 @@ const ChatBot = () => {
     }
 
   return (
-    <div className="chatbot-wrapper">
+
       <div className="chatbot-container">
 
         <div className="chatbot-title">Meet NomBot</div>
@@ -83,7 +83,7 @@ const ChatBot = () => {
         </div>
 
       </div>
-    </div>
+
   );
 };
 
