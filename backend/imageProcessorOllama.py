@@ -58,9 +58,9 @@ def process_image(filename):
                         for nutrient in item["foodNutrients"]:
                             if nutrient["nutrientName"] + " " + nutrient["unitName"] in ['Biotin UG', 'Calcium, Ca MG', 'Carbohydrate, by difference G', 'Cholesterol MG', 'Energy KCAL', 'Fatty acids, total monounsaturated G', 'Fatty acids, total polyunsaturated G', 'Fatty acids, total saturated G', 'Fatty acids, total trans G', 'Fiber, total dietary G', 'Glucose G', 'Iron, Fe MG', 'Potassium, K MG', 'Sodium, Na MG', 'Sugars, Total G', 'Total Sugars G', 'Vitamin A, IU IU', 'Vitamin B-6 MG', 'Vitamin C, total ascorbic acid MG', 'Vitamin D (D2 + D3), International Units IU']:
                                 if nutrients.get(nutrient["nutrientName"] + " " + nutrient["unitName"]) is None:
-                                    nutrients[nutrient["nutrientName"] + " " + nutrient["unitName"]] = round(nutrient["value"], 2)
+                                    nutrients[nutrient["nutrientName"] + " " + nutrient["unitName"]] = int(round(nutrient["value"], 2) * 100) / 100.0
                                 else:
-                                    nutrients[nutrient["nutrientName"] + " " + nutrient["unitName"]] += round(nutrient["value"], 2)
+                                    nutrients[nutrient["nutrientName"] + " " + nutrient["unitName"]] += int(round(nutrient["value"], 2) * 100) / 100.0
                         if nutrients.get("Sugars, Total G") is not None and nutrients.get("Total Sugars") is not None:
                             nutrients["Sugars, Total G"] += nutrients["Total Sugars G"]
                             nutrients.pop("Total Sugars G")

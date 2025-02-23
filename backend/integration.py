@@ -1,9 +1,6 @@
 from flask import Flask, jsonify, request
 import imageProcessorOllama
-
-def encryptInfo(dictionary):
-    # Encrypt the dictionary
-    return dictionary
+import awsStack
 
 app = Flask(__name__)
 
@@ -13,15 +10,22 @@ CORS(app)  # Enable CORS for all routes
 @app.route('/api/process-image', methods=['GET'])
 def processImage():
     try:
-        filename = request.args.get('image')  # Get the argument from the URL query string
+        filename = request.args.get('image') # Get the argument from the URL query string
+        username = request.args.get('username')
     except:
-        filename = "anna-pelzer-IGfIGP5ONV0-unsplash.jpg"  # hard-coded failsafe for debug
+        filename = "anna-pelzer-IGfIGP5ONV0-unsplash.jpg" # hard-coded failsafe for debug
+        username = "admin"
     if filename is None:
-        filename = "anna-pelzer-IGfIGP5ONV0-unsplash.jpg"  # hard-coded failsafe for debug
+        filename = "anna-pelzer-IGfIGP5ONV0-unsplash.jpg" # hard-coded failsafe for debug
+        username = "admin"
     print(filename)
+    print("User:", username)
 
     # Run processing
     data = imageProcessorOllama.process_image(filename)
+
+    awsStack.forkastData(username, filename, data)
+
     print("Flask API is returning", data)
     return jsonify(data)
 
