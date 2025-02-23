@@ -16,10 +16,8 @@ def chatbot(context, prompt, username):
         response += chunk['message']['content']
         print(chunk['message']['content'], end='', flush=True)
 
-    print(context)
-    print(json.loads(context))
+    print()
     context = json.loads(context.replace("'", '"'))
-    print(context)
     context.append(prompt)
     context.append(response)
     print(context)
