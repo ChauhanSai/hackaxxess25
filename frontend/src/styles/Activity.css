@@ -67,3 +67,23 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+.upload-button{
+  background: #023020;
+  color: rgba(255, 255, 240, 0.94);
+  font-size: 18px;
+  border-radius: 30px;
+  border: 2px solid #023020;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.1s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.upload-button:hover{
+  background: #035c2f;
+  color: #FFFFF0;
+}
