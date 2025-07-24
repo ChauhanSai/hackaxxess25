@@ -1,0 +1,22 @@
+{
+  "GET-nutrition": {
+    "routeKey": "GET /forkastAPI/nutrition",
+    "queryStringParameters": {
+      "id": "123"
+    }
+  },
+  "GET-user": {
+    "routeKey": "GET /forkastAPI/user",
+    "queryStringParameters": {
+      "username": "testuser"
+    }
+  },
+  "POST-nutrition": {
+    "routeKey": "POST /forkastAPI/nutrition",
+    "body": "{\"id\": \"1234\", \"image\": \"https://example.com/image.jpg\", \"data\": \"encrypted_nutrition_data_sample\"}"
+  },
+  "POST-user": {
+    "routeKey": "POST /forkastAPI/user",
+    "body": "{\"username\": \"testuser\", \"password\": \"securepass123\", \"email\": \"test@example.com\", \"age\": \"25\", \"sex\": \"M\", \"height\": \"175\", \"weight\": \"70\"}"
+  }
+}

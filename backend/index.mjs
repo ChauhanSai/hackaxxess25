@@ -105,7 +105,7 @@ const handleGetNutrition = async (queryParams) => {
 const handlePostUser = async (body) => {
   let parsedBody;
   try {
-    parsedBody = JSON.parse(body);
+    parsedBody = JSON.parse(body.replace("\\", ""));
   } catch (error) {
     return { statusCode: 400, body: JSON.stringify({ message: "Invalid JSON format" }) };
   }
