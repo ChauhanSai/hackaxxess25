@@ -1,5 +1,5 @@
 # Forkast
-### Submission to [Hack Axxess 2025](https://devpost.com/software/forkcast)
+### 🏆 First place submission to [Hack Axxess 2025](https://devpost.com/software/forkcast)
 
 ## Why use Forkast? 🥗
 Lots of apps exist that scan the barcodes of grocery store products and track your nutrition, diet habits, etc. However, there is no place to go to get accurate, quick, and easy nutrition information for home-cooked, restaurant-style, or, for students, dining-hall meals. Thats where **Forkast** comes in. Unlike traditional nutrition-tracking apps that rely on barcode scanning, Forkast uses AI to analyze images of food in places where nutrition information is often unavailable. Just snap a picture, and Forkast instantly identifies your meal, provides detailed nutrition insights, and tracks your eating habits over time.
